@@ -39,8 +39,8 @@ class Sms:
     def get_num_repeat(self, tzid):
         return self._send('getNumRepeat', param=f'tzid={tzid}')
 
-    def set_ready(self):
-        return self._send('tzid')
+    def set_ready(self, tzid):
+        return self._send('tzid', param=f'tzid={tzid}')
 
     def _get_state(self, tzid):
         return self._send('getState', param=f'tzid={tzid}')
