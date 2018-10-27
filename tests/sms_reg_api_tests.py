@@ -5,7 +5,7 @@ from random import choice, randint
 import sms_reg_api
 from sms_reg_api.sms_reg import Sms
 '''
-Api_key сменен, попытка
+Api_key изменен, попытка
 использовать ключ из тестов
 не увенчается успехом.
 '''
