@@ -17,7 +17,7 @@ sms = Sms(client_key)  # str: client_key
 Метод             | Описание
 ------------------|----------------------
 balance()         | Возвращает баланс аккаунта
-set_rate(rate)    | Ставит дополнительную ставку в размере rate (**int**)
+set_rate(rate)    | Устанавливает дополнительную ставку в размере rate (**int**)
 get_list(extended=None)    | Возвращает список сервисов, с extended(**int**) только доступные
 get_num(service, country=None)| Запрашивает офер на номер, service(**str**) - сервис, с country(**str**) номер страны, возвращает tzid
 get_num_repeat(tzid)      | Запрашивает офер на использование номера повторно, tzid ключ(**str**)
