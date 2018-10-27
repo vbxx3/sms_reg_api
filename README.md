@@ -1,4 +1,4 @@
-# sms-reg.com API [Python]
+# Sms-reg API [Python]
   Python API для [сервиса активации симкарт](https://sms-reg.com).
   
   Требуется тестирование библиотеки, писать [сюда](https://linkedin.com/in/vbxx3).
