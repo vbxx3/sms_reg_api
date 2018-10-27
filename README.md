@@ -1,9 +1,9 @@
 # sms-reg.com API [Python]
-  Python API для [сервиса активации симкарт](https://sms-reg.com)
+  Python API для [сервиса активации симкарт](https://sms-reg.com).
   
-  Требуются тесты, писать [сюда](https://linkedin.com/in/vbxx3)
+  Требуется тестирование библиотеки, писать [сюда](https://linkedin.com/in/vbxx3).
   
-  Оригинальный [REST](http://sms-reg.com/docs/API.html)
+  Оригинальный [REST](http://sms-reg.com/docs/API.html).
 ***
 ### Установка:
 	
