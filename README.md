@@ -1,10 +1,10 @@
 # sms-reg.com API [Python]
   Python API для [сервиса активации симкарт](https://sms-reg.com).
-  
+  Требуются [тестировщики](https://linkedin.com/in/vbxx3)
   Оригинальный [REST](http://sms-reg.com/docs/API.html)
 ***
 ### Установка:
-
+	
     pip install sms-reg
 ***
 ### Документация:
@@ -41,4 +41,3 @@ if sms.wait_number(tzid):
 else:
 	print('Что-то пошло не так')
 ```
-## Требуются [тестировщики](https://linkedin.com/in/vbxx3)
