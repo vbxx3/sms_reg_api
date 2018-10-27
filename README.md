@@ -23,7 +23,7 @@ get_num(service, country=None)| Запрашивает офер на номер,
 get_num_repeat(tzid)      | Запрашивает офер на использование номера повторно, tzid ключ(**str**)
 set_ready(tzid)   | Активирует офер
 wait_number(tzid)       | Ожидает пока не выдан номер
-wait_answer(tzid)      | Ожмдает пока не придет смс, возвращает либо его содержимое, либо False(**bool**)
+wait_answer(tzid)      | Ожидает пока не придет смс, возвращает либо его содержимое, либо False(**bool**)
 get_operations(opstate=None, count=None, output=None):        | Возвращает операции, [подробнее](http://sms-reg.com/docs/APImethods.html?getOperations)
 set_ok(tzid)        | Подтверждает, что операция прошла успешно, закрывает офер
 set_used(tzid)        | Сообщает, что номер был использован ранее, закрывает офер
