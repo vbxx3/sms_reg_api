@@ -41,4 +41,4 @@ if sms.wait_number(tzid):
 else:
 	print('Что-то пошло не так')
 ```
-** Требуются тестировщики, по всем вопросам linkedin.com/in/vbxx3
+## Требуются [тестировщики](https://linkedin.com/in/vbxx3)
