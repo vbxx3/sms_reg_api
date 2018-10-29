@@ -56,7 +56,10 @@ class Sms:
 
         response = self._get_state(tzid)
 
-        return response.get('response', None) == 'TZ_NUM_PREPARE'
+        if response.get('response', None) == 'TZ_NUM_PREPARE':
+            return response['number']
+        else:
+            return False
 
     def wait_answer(self, tzid):
         while self._get_state(tzid).get('response', None) == 'TZ_NUM_WAIT':

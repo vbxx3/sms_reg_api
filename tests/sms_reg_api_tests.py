@@ -18,7 +18,7 @@ class SmsTest(unittest.TestCase):
                 Sms(''.join([choice(string.ascii_uppercase + string.digits) for _ in range(randint(1, 10000))]))
 
     def test_auth_normal(self):
-        self.assertTrue(Sms('2d08p37k6bkwjpj1pqgwdsbg9nuy2g1y'))
+            self.assertTrue(Sms('2d08p37k6bkwjpj1pqgwdsbg9nuy2g1y'))
 
     def test_balance(self):
         self.assertTrue(Sms('2d08p37k6bkwjpj1pqgwdsbg9nuy2g1y').balance())
