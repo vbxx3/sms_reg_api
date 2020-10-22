@@ -12,8 +12,7 @@ class Sms:
         response = requests.get(f'http://api.sms-reg.com/{method}.php?{param}&apikey={self._api_key}').json()
         if response['response'] == 'ERROR':
             raise MethodError(response.get('error_msg', None))
-        else:
-            return response
+        return response
 
     def _check_auth(self):
         if requests.get(f'http://api.sms-reg.com/getBalance.php?&'
@@ -33,8 +32,7 @@ class Sms:
     def get_num(self, service, country=None):
         if country:
             return self._send('getNum', param=f'country={country}&service={service}')['tzid']
-        else:
-            return self._send('getNum', param=f'service={service}')['tzid']
+        return self._send('getNum', param=f'service={service}')['tzid']
 
     def get_num_repeat(self, tzid):
         return self._send('getNumRepeat', param=f'tzid={tzid}')
@@ -58,8 +56,6 @@ class Sms:
 
         if response.get('response', None) == 'TZ_NUM_PREPARE':
             return response['number']
-        else:
-            return False
 
     def wait_answer(self, tzid):
         while self._get_state(tzid).get('response', None) == 'TZ_NUM_WAIT':
@@ -69,8 +65,6 @@ class Sms:
 
         if response.get('response', None) == 'TZ_NUM_ANSWER':
             return response['msg']
-        else:
-            return False
 
     def set_ok(self, tzid):
         return self._send('setOperationOk', param=f'tzid={tzid}')
